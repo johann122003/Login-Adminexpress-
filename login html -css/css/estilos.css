@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+}
+
+.contenedor-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+.panel-azul {
+    background-color: #0d6efd;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel-blanco {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-formulario {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.contenido-formulario h2 {
+    font-size: 28px;
+    color: #1D202B;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.contenido-formulario h2 strong {
+    color: #111;
+}
+
+.subtitulo {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.input-contenedor {
+    display: flex;
+    align-items: center;
+    background-color: #fafafa;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 0 15px;
+}
+
+.input-contenedor input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 10px;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    outline: none;
+    color: #333;
+}
+
+.icono {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    color: #1D202B;
+}
+
+.icono-ojo {
+    color: #8a8f98;
+}
+
+.grupo-input {
+    margin-bottom: 20px;
+}
+
+.grupo-input label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.link-olvido {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    color: #0d6efd;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.btn-signin {
+    width: auto;
+    padding: 12px 40px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.texto-registro {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #666;
+}
+
+.texto-registro a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+    .contenedor-principal {
+        grid-template-columns: 1fr;
+    }
+
+    .panel-azul {
+        display: none;
+    }
+
+    .panel-blanco {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .btn-signin {
+        width: 100%;
+    }
+    .grupo-input .etiqueta {
+        display: none;
+    }
+}
